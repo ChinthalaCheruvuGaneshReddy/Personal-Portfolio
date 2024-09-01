@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="index.html">
+    <link href="project.html">
+	<link href="contact.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #000066 0%, #0099cc 100%);
+        }
+        .navbar {
+            
+            font-size: 17px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10px;
+            z-index: 1000;
+        }
+        .navbar-nav {
+            margin: auto;
+        }
+        .navbar-toggler {
+            background-color: white;
+        }
+        .nav-link {
+            margin-left: 20px;
+            color: #fff;
+            font-size: 20px;
+        }
+        .nav-link:hover {
+            color: #fff;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #fff;
+            transition: width 0.5s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+            transition: width 0.3s;
+        }
+        .row1 {
+            margin: 40px 0px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        h5 {
+            color: #fff;
+            padding: 10px 0px 0px 0px;
+            text-align: center;
+        }
+        .hi {
+            margin: 40px 0px 10px 0px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            border-radius: 1px;
+            background-color: #fff;
+        }
+        .card:hover {
+            border-width: 3px;
+            box-shadow: rgba(255, 255, 255, 255) 5px 15px 25px;
+        }
+        .popup {
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 45px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .eduheadding {
+            margin: 10px 0px 50px 0px;
+        }
+        .centerpara {
+            text-align: center;
+            font-family: "Garamond";
+            color: white;
+            margin: 0px 0px 35px 0px;
+            font-size: 40px;
+        }
+        .para {
+            text-align: center;
+            color: white;
+            margin: 10px 0px 10px 0px;
+            font-size: 20px;
+            font-family: "georgian";
+        }
+        .hrr {
+            height: 4px;
+            color: white;
+        }
+		.imagelogo{
+			width:70px;
+			height:70px;
+			margin:0px 8px;
+		}
+		.centerpara1 {
+            text-align: center;
+            font-family: "Garamond";
+            color:#fbbb3a;
+            margin: 60px 0px 25px 0px;
+            font-size: 45px;
+			letter-spacing:5px;
+        }
+		.para1 {
+            text-align: center;
+            color: white;
+            margin: 10px 0px 10px 0px;
+            font-size: 25px;
+            font-family: "georgian";
+			letter-spacing:2px;
+        }
+		.centerpara2 {
+            text-align: center;
+            font-family: "Garamond";
+            color:#ef7a29;
+            margin: 60px 0px 25px 0px;
+            font-size: 55px;
+			letter-spacing:5px;
+        }
+		.headding{
+			text-align:center;
+			font-family:"garamond";
+			color:#fff;
+			margin:40px 0px 40px 0px;
+			font-size:45px;
+		}
+		.para2 {
+            text-align: center;
+            color: white;
+            margin: 10px 0px 10px 0px;
+            font-size: 20px;
+            font-family: "georgian";
+			letter-spacing:2px;
+        }
+		.image1{
+			width:500px;
+			height:350px;
+			margin:60px 0px 30px 0px;
+		}
+		.unlist{
+			color:#fff;
+			font-family: "georgian";
+			letter-spacing:2px;
+			font-size:18px;
+		}
+		.headding1{
+			text-align:center;
+			font-family:"garamond";
+			color:#fc2005;
+			margin:40px 0px 80px 0px;
+			font-size:45px;
+		}
+		
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navabout">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="row row1">
+                    <div class="col-md-3 hi">
+                        <div class="card">
+                            <img src="education.avif" alt="image" id="myButton1">
+                            <div id="myPopup1" class="popup">
+                                <span class="close-btn" id="closePopup1">&times;</span>
+                                <div class="popup-content">
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4">
+                                            <div class="eduheadding"></div>
+                                            <h3 class="centerpara">Bachelor of Technology (B.Tech)</h3>
+                                            <p class="para">Vignan's Lara Institute of Technology & Science.</p>
+                                            <p class="para">Computer Science & Engineering</p>
+                                            <p class="para">Batch - 2022</p>
+                                            <hr class="hrr">
+                                            <h3 class="centerpara">Intermediate</h3>
+                                            <p class="para">NRI Junior College.</p>
+                                            <p class="para">MPC</p>
+                                            <p class="para">Batch - 2018, 72%</p>
+                                            <hr class="hrr">
+                                            <h3 class="centerpara">10th Grade</h3>
+                                            <p class="para">Aadarsh School</p>
+                                            <p class="para">Batch - 2016, 77%</p>
+                                            <div style="margin: 20px 0px 160px 0px;"></div>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="paragraph">Education</h5>
+                    </div>
+
+                    <div class="col-md-3 hi">
+                        <div class="card">
+                            <img src="skills1.jpg" alt="image" id="myButton2">
+                            <div id="myPopup2" class="popup">
+                                <span class="close-btn" id="closePopup2">&times;</span>
+                                <div class="popup-content">
+                                    <div class="row" style="margin-top:180px;">
+										<div class="col-md-3"></div>
+										<div class="col-md-6">
+											
+											<div><img src="html.png" class="imagelogo">
+												<img src="css.png" class="imagelogo">
+												<img src="js.png" class="imagelogo">
+												<img src="bootstrap.png" class="imagelogo">
+												<img src="java.png" class="imagelogo">
+												<img src="mysql.png" class="imagelogo">
+												<img src="sql.png" class="imagelogo">
+												<img src="jsp.png" class="imagelogo">
+											</div>	<hr class="hrr">
+										
+										<h3 class="centerpara1">Front-End</h3>
+											<p class="para1">HTML, CSS, BootStrap, JavaScript.</p><hr class="hrr">
+											
+										<h3 class="centerpara1">Back-End</h3>
+											<p class="para1">Java, JSP, JDBC, Servlets, API'S</p><hr class="hrr">
+											
+										<h3 class="centerpara1">DataBase</h3>
+											<p class="para1">SQL, MySQL, Tabels, Joints</p>
+											<div style="margin: 20px 0px 160px 0px;"></div>
+										</div>
+										<div class="col-md-3"></div>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="paragraph">Skills</h5>
+                    </div>
+
+                    <div class="col-md-3 hi">
+                        <div class="card">
+                            <img src="certification.png" alt="image" id="myButton3">
+                            <div id="myPopup3" class="popup">
+                                <span class="close-btn" id="closePopup3">&times;</span>
+                                <div class="popup-content">
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4">
+                                            <div class="eduheadding"></div>
+												<p class="centerpara2">Certifications</p><hr class="hrr">
+													
+													<h1 class="headding">Java Full Stack</h1>
+													<p class="para2">
+														This course has truly transformed my entire perception of coding and development. What was once a daunting challenge has become an exciting and fulfilling journey. I’ve gained a solid foundation in front-end development, mastering the art of creating engaging and intuitive user interfaces. The course also delved deeply into back-end development, equipping me with the skills to build robust and efficient server-side applications. Additionally, my understanding of databases has strengthened, allowing me to manage and organize data with confidence. Overall, this course has not only enhanced my technical abilities but also ignited a passion for development that continues to drive me forward.
+													</p>
+													<img src="certificate.png" class="image1"><hr class="hrr">
+													
+													<h1 class="headding">Devops With AWS</h1>
+													<p class="para2">
+														The "DevOps with AWS" course provided a solid foundation in key DevOps practices and AWS services, enhancing my understanding of development and maintenance. I learned to automate software delivery through Continuous Integration/Continuous Deployment (CI/CD) and Infrastructure as Code (IaC) using tools like Terraform and AWS CloudFormation. The course also covered containerization with Docker, orchestration with Kubernetes, and configuration management with Ansible. Additionally, I gained practical experience with AWS services like EC2, S3, and Lambda, equipping me with the skills to manage cloud infrastructure and deploy applications efficiently.
+														
+													</p>
+													<img src="devops.png" class="image1">
+													
+                                            <div style="margin: 20px 0px 160px 0px;"></div>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="paragraph">Certifications</h5>
+                    </div>
+
+                    <div class="col-md-3 hi">
+                        <div class="card">
+                            <img src="story.jpg" alt="image" id="myButton4">
+                            <div id="myPopup4" class="popup">
+                                <span class="close-btn" id="closePopup4">&times;</span>
+                                <div class="popup-content">
+                                    
+									<div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <div class="eduheadding"></div>
+													<h3 class="headding1">Not a Great story but I'm warning you in the beginning..!</h3><hr class="hrr">
+												<div>
+													<ul class="unlist">
+														<li>
+															<strong>Phase 1: Early Years</strong><br><br>
+															During my early years, from kindergarten through 12th grade, I was often perceived as carefree and not particularly serious, mainly due to my academic struggles and lack of guidance. As a child, I was deeply fascinated by games and play, showing little interest in studies. My focus was on having fun, watching TV, and just enjoying myself. Books felt distant and uninteresting. However, this wasn’t solely my fault; the education system and teachers also failed to engage and guide me effectively. Consequently, I struggled academically and was viewed as a dull student.
+														</li><br><br>
+														<li>
+															<strong>Phase 2: B.Tech Journey</strong><br><br>
+															Entering the B.Tech program at Vignan's Lara Institute of Technology and Science marked a pivotal phase in my life. The initial excitement of college soon gave way to numerous challenges and failures, especially during the second year. The following four years were a roller coaster of fun, failures, and various college experiences. While there were more tough situations than happy moments, I eventually met someone who had a profound impact on me and helped me grow by the end of my course.
+														</li><br><br>
+														<li>
+															<strong>Phase 3: Post-Graduation Struggles<strong><br><br>
+															After graduation, I faced one of the most challenging periods of my life, marked by a series of failures. My initial plan to pursue a master’s degree in the USA was thwarted by a failed application process and visa rejections. Shifting focus, I decided to upskill by joining Vcube for a Java Full Stack course. This training equipped me with valuable programming skills, allowing me to build a website and an application. Despite these achievements, I faced further setbacks during my visa interviews, but I continued to persevere.
+														</li><br><br>
+														<li>
+															<strong>Reflection and Resilience</strong><br><br>
+															Every life story has its ups and downs, and mine is no exception. The challenges I faced have been instrumental in shaping my identity and resilience, revealing strengths I didn’t know I had. What I’m most proud of is my ability to face and overcome these challenges. The setbacks I’ve encountered have taught me valuable lessons and pushed me to grow. I now approach future challenges with confidence and the wisdom gained from my past experiences.
+														</li>
+													</ul>
+												</div>
+													
+                                            <div style="margin: 20px 0px 160px 0px;"></div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+									
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="paragraph">Story</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <script>
+        
+        function handlePopup(buttonId, popupId, closeId) {
+            var button = document.getElementById(buttonId);
+            var popup = document.getElementById(popupId);
+            var close = document.getElementById(closeId);
+
+            button.addEventListener("click", function() {
+                popup.classList.add("show");
+            });
+
+            close.addEventListener("click", function() {
+                popup.classList.remove("show");
+            });
+
+            window.addEventListener("click", function(event) {
+                if (event.target == popup) {
+                    popup.classList.remove("show");
+                }
+            });
+        }
+
+        
+        handlePopup("myButton1", "myPopup1", "closePopup1");
+        handlePopup("myButton2", "myPopup2", "closePopup2");
+        handlePopup("myButton3", "myPopup3", "closePopup3");
+        handlePopup("myButton4", "myPopup4", "closePopup4");
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
